@@ -5,10 +5,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "yaml_model"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A basic ORM-like setup for reading YAML files.}
+    gem.description = %Q{A basic ORM-like setup for reading YAML files.}
     gem.email = "michael@intridea.com"
-    gem.homepage = "http://github.com/mbleigh/yaml_model"
+    gem.homepage = "http://github.com/intridea/yaml_model"
     gem.authors = ["Michael Bleigh"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
