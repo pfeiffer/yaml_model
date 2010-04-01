@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Bleigh"]
   s.date = %q{2010-04-01}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{A basic ORM-like setup for reading YAML files.}
   s.email = %q{michael@intridea.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -26,13 +26,14 @@ Gem::Specification.new do |s|
      "lib/yaml_model.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
-     "spec/yaml_model_spec.rb"
+     "spec/yaml_model_spec.rb",
+     "yaml_model.gemspec"
   ]
-  s.homepage = %q{http://github.com/mbleigh/yaml_model}
+  s.homepage = %q{http://github.com/intridea/yaml_model}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.6}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{A basic ORM-like setup for reading YAML files.}
   s.test_files = [
     "spec/spec_helper.rb",
      "spec/yaml_model_spec.rb"
