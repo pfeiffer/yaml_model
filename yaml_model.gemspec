@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{yaml_model}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Bleigh"]
-  s.date = %q{2010-04-01}
+  s.date = %q{2010-04-13}
   s.description = %q{A basic ORM-like setup for reading YAML files.}
   s.email = %q{michael@intridea.com}
   s.extra_rdoc_files = [
@@ -24,8 +24,10 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/yaml_model.rb",
+     "lib/yaml_model/rails.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb",
+     "spec/yaml_model/rails_spec.rb",
      "spec/yaml_model_spec.rb",
      "yaml_model.gemspec"
   ]
@@ -36,6 +38,7 @@ Gem::Specification.new do |s|
   s.summary = %q{A basic ORM-like setup for reading YAML files.}
   s.test_files = [
     "spec/spec_helper.rb",
+     "spec/yaml_model/rails_spec.rb",
      "spec/yaml_model_spec.rb"
   ]
 
