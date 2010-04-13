@@ -1,3 +1,5 @@
+require 'yaml_model'
+
 class YamlModel
   class Rails < ::YamlModel
     def self.yaml_file
