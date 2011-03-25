@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/spec_helper'
 
 class ExampleYamlModel < YamlModel
-  attribute :name
+  attribute :name, :players
   attribute :scheme, :default => 'skeeball'
 end
 
@@ -19,7 +19,8 @@ describe YamlModel do
       
       "GHI" => {
         "name" => "Gordon's Heaving International",
-        "scheme" => "foosball"
+        "scheme" => "foosball",
+        "players" => 10
       }
     }
     
@@ -142,6 +143,10 @@ describe YamlModel do
     
     it 'should be able to specify a default' do
       ExampleYamlModel.new(:test).scheme.should == 'skeeball'
+    end
+    
+    it 'should be able to add multiple attributes as an array' do
+      ExampleYamlModel.attributes.should be_include('players')
     end
   end
   

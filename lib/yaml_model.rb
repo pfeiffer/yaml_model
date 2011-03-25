@@ -34,12 +34,17 @@ class YamlModel
     end
     alias_method :find, :[]
     
-    def attribute(name, options = {})
-      (@attributes ||= []) << name.to_s
-      (@defaults ||= {})[name.to_s] = options.delete(:default)
+    def attribute(*args)
+      options = args.last.is_a?(Hash) ? args.last : {}
+      attributes = args.last.is_a?(Hash) ? args.slice!(0, args.length - 1) : args
       
-      class_eval do
-        attr_reader name
+      attributes.each do |name|
+        (@attributes ||= []) << name.to_s
+        (@defaults ||= {})[name.to_s] = options.delete(:default)
+      
+        class_eval do
+          attr_reader name
+        end
       end
     end
     
